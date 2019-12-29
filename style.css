@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
+
+html, body{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+body{
+	background: url("BG.jpg") no-repeat 50% 50%;
+	height: 100vh;
+	background-size: cover;
+	display: table;
+	text-shadow: 1px 1px 10px rgba(0,0,0,1);
+}
+
+
+.nav{
+	text-align: center;
+	margin-top: 60px;
+	font-size: 3vw;
+	text-shadow: 1px 1px 20px rgba(0,0,0,1);
+}
+
+li{
+	list-style-type: none;
+	display: inline-block;
+}
+
+li:hover a{
+	font-weight: 700;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Neucha', cursive;
+	font-weight: lighter;
+	padding: 16px 20px;
+}
+
+.logo{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.logo img{
+	width: 70px;
+	user-select: none;
+}
+
+.header{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.header h1{
+	color: #fff;
+	font-family: 'Satisfy', cursive;
+	font-size: 3.2vw;
+	user-select: none;
+}
+
+.tagline{
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 1.5vw;
+	width: 100%;
+	text-align: center;
+	line-height: 3vw;
+}
+
+.tagline p{
+	color: #fff;
+	font-family: 'Neucha', cursive;
+	letter-spacing: 16px;
+	text-transform: uppercase;
+}
+
+.btn{
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border: 1px solid #fff;
+	background-color: rgba(0,0,0,0);
+	padding: 16px 20px;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: all 0.3s;
+	outline: none;
+}
+
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+
+/* Set for mobile */
+
+@media only screen
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	body::before{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(0,0,0,0.2);
+		z-index: -1;
+}
+	.nav{
+		font-size: 40px;
+		font-weight: bold;
+	}
+
+	.logo img{
+		width: 150px;
+	}
+
+	.header h1{
+		text-align: center;
+		font-size: 5vw;
+		width: 100vw;
+	}
+
+	.tagline{
+		font-size: 2vw;
+		line-height: 4vw;
+	}
+
+ 	.btn{
+		padding: 2vh 7vw;
+		font-size: 3vw;
+	}
+}
